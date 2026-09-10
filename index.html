@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Srinidhi Matta — B.Tech CSE student, developer and AI/ML learner." />
+  <title>Srinidhi Matta — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <canvas id="particles"></canvas>
+
+  <header class="nav">
+    <a class="brand" href="#home">srinidhi.</a>
+    <nav>
+      <a href="#about">about</a>
+      <a href="#work">work</a>
+      <a href="#skills">skills</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <a class="nav-pill" href="#contact">let's connect <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-kicker">B.TECH CSE · 01 / 04</div>
+
+      <div class="hero-copy">
+        <p class="eyebrow hero-handnote">dream · build · repeat ♡</p>
+        <h1>Srinidhi<br><em>Matta.</em></h1>
+        <p class="hero-degree">B.Tech 1st Year&nbsp; | &nbsp;Computer Science &amp; Engineering</p>
+        <p class="hero-desc">Curious mind. Code lover. Future builder.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">Explore My Work <span>→</span></a>
+          <a class="button ghost" href="#contact">contact me</a>
+        </div>
+      </div>
+
+      <div class="hero-stage" id="heroStage">
+        <div class="portrait-wrap" id="portrait">
+          <div class="portrait-aura"></div>
+
+          <div class="orbit-layer orbit-behind" aria-hidden="true">
+            <div class="hero-orbit orbit-a"><i></i><i></i><i></i></div>
+            <div class="hero-orbit orbit-b"><i></i><i></i></div>
+            <div class="hero-orbit orbit-c"><i></i><i></i><i></i></div>
+            <div class="orbit-particles" id="orbitParticles"></div>
+          </div>
+
+          <div class="portrait-frame">
+            <img src="assets/hero-reference.png" alt="Srinidhi Matta" class="hero-reference-portrait" />
+            <div class="portrait-overlay"></div>
+            <div class="portrait-shine"></div>
+          </div>
+
+          <div class="portrait-crown" aria-hidden="true">♕</div>
+          <span class="portrait-star star-a">✦</span>
+          <span class="portrait-star star-b">✦</span>
+          <span class="portrait-star star-c">✧</span>
+        </div>
+
+        <div class="hero-float-card dream-card" data-depth="12">
+          <span>Better<br>Code<br>Bigger<br>Dreams ♡</span>
+        </div>
+
+        <div class="hero-float-card skills-card" data-depth="16">
+          <div>◈ <span>Python</span></div>
+          <div>♨ <span>Java</span></div>
+          <div>&lt;/&gt; <span>Web Dev</span></div>
+          <div>◎ <span>AI / ML</span></div>
+          <div>⌘ <span>DSA</span></div>
+        </div>
+
+        <div class="hero-float-card code-card" data-depth="10">
+          <code><b>1</b> def dream():<br><b>2</b>&nbsp;&nbsp; while True:<br><b>3</b>&nbsp;&nbsp;&nbsp;&nbsp; learn()<br><b>4</b>&nbsp;&nbsp;&nbsp;&nbsp; build()<br><b>5</b>&nbsp;&nbsp;&nbsp;&nbsp; grow()<br><b>6</b>&nbsp;&nbsp;&nbsp;&nbsp; return "freedom"</code>
+        </div>
+
+
+        <div class="hero-float-card travel-card" data-depth="14">
+          <div class="mini-landscape"></div>
+          <span>Next stop:<br><b>The World</b> ♡</span>
+        </div>
+
+        <p class="hero-scribble scribble-right" data-depth="7">same girl.<br>bigger dreams ♡</p>
+        <p class="hero-scribble scribble-bottom" data-depth="5">better than<br>yesterday ♡</p>
+      </div>
+
+      <div class="hero-side">
+        <span>currently learning</span>
+        <strong>JAVA / DSA</strong>
+        <span>exploring</span>
+        <strong>AI · WEB</strong>
+      </div>
+
+      <div class="scroll-cue"><span></span> scroll to explore</div>
+    </section>
+
+    <section class="marquee" aria-label="skills marquee">
+      <div class="marquee-track">
+        <span>PYTHON</span><i>✦</i><span>JAVA</span><i>✦</i><span>DSA</span><i>✦</i>
+        <span>WEB DEVELOPMENT</span><i>✦</i><span>AI / ML</span><i>✦</i><span>UI / UX</span><i>✦</i>
+        <span>PYTHON</span><i>✦</i><span>JAVA</span><i>✦</i><span>DSA</span><i>✦</i>
+        <span>WEB DEVELOPMENT</span><i>✦</i><span>AI / ML</span><i>✦</i>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-index">01 — ABOUT</div>
+      <div class="about-grid">
+        <div>
+          <p class="eyebrow">a little context</p>
+          <h2>Learning.<br><em>Building.</em><br>Repeating.</h2>
+        </div>
+        <div class="about-text">
+          <p>
+            I'm a B.Tech first-year Computer Science student at the Institute of
+            Aeronautical Engineering. I enjoy problem-solving, building frontend
+            experiences, and exploring AI/ML concepts without pretending I already
+            know everything. Humanity has enough confident people who haven't read the docs.
+          </p>
+          <p>
+            My current focus is strengthening Java, DSA, Python and web development
+            while turning what I learn into practical projects.
+          </p>
+          <div class="facts">
+            <div><small>EDUCATION</small><b>IARE · CSE</b></div>
+            <div><small>LOCATION</small><b>Bachupally</b></div>
+            <div><small>FOCUS</small><b>Software · AI/ML</b></div>
+            <div><small>STATUS</small><b>1st Year · 2026</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section">
+      <div class="stat"><strong>05+</strong><span>JAVA / WEB PROJECTS</span></div>
+      <div class="stat"><strong>02</strong><span>CERTIFICATIONS / HACKATHONS</span></div>
+      <div class="stat"><strong>04</strong><span>CORE DSA AREAS</span></div>
+      <div class="stat"><strong>01</strong><span>INTERNSHIP</span></div>
+    </section>
+
+    <section class="work section" id="work">
+      <div class="section-index">02 — SELECTED WORK</div>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">things i've built</p>
+          <h2>Small projects.<br><em>Real practice.</em></h2>
+        </div>
+        <p class="section-note">A growing collection of Java, DSA and frontend experiments.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="project-number">01</div>
+          <div class="project-visual visual-grade"><span>GRADE</span><b>MANAGER</b><div class="code-lines"></div></div>
+          <div class="project-info">
+            <div><h3>Grade Manager</h3><span>JAVA</span></div>
+            <p>Marks, averages and highest/lowest scores using arrays and methods.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <div class="project-visual visual-expense"><span>₹</span><b>EXPENSES</b><div class="bars"><i></i><i></i><i></i><i></i></div></div>
+          <div class="project-info">
+            <div><h3>Expense Tracker</h3><span>JAVA</span></div>
+            <p>Category-wise and total spending analysis for logic-building and data handling.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <div class="project-visual visual-array"><span>ARRAY</span><b>ANALYZER</b><div class="array-boxes"><i>4</i><i>9</i><i>2</i><i>7</i><i>5</i></div></div>
+          <div class="project-info">
+            <div><h3>Array Analyzer</h3><span>JAVA · DSA</span></div>
+            <p>Searching, frequency counting, min/max and sorting practice.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">04</div>
+          <div class="project-visual visual-web"><span>&lt;/&gt;</span><b>PORTFOLIO</b><div class="window-lines"></div></div>
+          <div class="project-info">
+            <div><h3>Personal Portfolio Website</h3><span>HTML · CSS · JS</span></div>
+            <p>Responsive portfolio with navigation, project showcase and interactive frontend features.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">05</div>
+          <div class="project-visual visual-todo"><span>TODO</span><b>LIST</b><div class="checks"><i>✓</i><i>✓</i><i>□</i></div></div>
+          <div class="project-info">
+            <div><h3>To-Do List Web App</h3><span>HTML · CSS · JS</span></div>
+            <p>Browser-based task manager using DOM manipulation to add, complete and delete tasks.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">06</div>
+          <div class="project-visual visual-landing"><span>LANDING</span><b>PAGE</b><div class="landing-orb"></div></div>
+          <div class="project-info">
+            <div><h3>Responsive Landing Page</h3><span>HTML · CSS</span></div>
+            <p>Mobile-first layout with clean navigation and cross-browser compatible styling.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="toolkit section" id="skills">
+      <div class="section-index">03 — MY TOOLKIT</div>
+      <div class="toolkit-head">
+        <p class="eyebrow">tools i use</p>
+        <h2>My <em>Toolkit.</em></h2>
+      </div>
+      <div class="toolkit-stage">
+        <div class="toolkit-card card-back">
+          <small>03</small><b>WEB</b><span>HTML · CSS · JS</span>
+        </div>
+        <div class="toolkit-card card-mid">
+          <small>02</small><b>JAVA</b><span>OOP · Collections</span>
+        </div>
+        <div class="toolkit-card card-front">
+          <small>01</small><b>PYTHON</b><span>Logic · AI/ML foundations</span>
+          <div class="card-orb"></div>
+        </div>
+      </div>
+      <div class="toolkit-tags">
+        <span>VS CODE</span><span>GIT</span><span>GITHUB</span><span>ARRAYS</span><span>STRINGS</span>
+        <span>LINKED LISTS</span><span>SEARCHING</span><span>SORTING</span><span>RECURSION</span>
+      </div>
+    </section>
+
+    <section class="journey section">
+      <div class="section-index">04 — JOURNEY</div>
+      <div class="journey-grid">
+        <div>
+          <p class="eyebrow">experience</p>
+          <h2>Still early.<br><em>Already moving.</em></h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span>SEP — OCT 2026</span>
+            <h3>Web Development Intern · Thiranex</h3>
+            <p>Project-based remote internship working on practical web development projects under industry mentorship.</p>
+          </div>
+          <div class="timeline-item">
+            <span>2026</span>
+            <h3>Puzzle Masters Hackathon · Gamnexis</h3>
+            <p>Certificate of participation while exploring problem-solving through a hackathon environment.</p>
+          </div>
+          <div class="timeline-item">
+            <span>2026</span>
+            <h3>Yuva AI for All · nasscom FutureSkills Prime</h3>
+            <p>Completed an introductory AI/ML learning experience and built a foundation for further study.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="connect section" id="contact">
+      <div class="connect-bg">CONNECT</div>
+      <div class="section-index">05 — CONTACT</div>
+      <div class="connect-grid">
+        <div>
+          <p class="eyebrow">have an idea?</p>
+          <h2>Let's<br><em>connect.</em></h2>
+          <p class="connect-copy">For internships, collaborations, projects or a sensible conversation about building things.</p>
+        </div>
+        <div class="contact-panel">
+          <a href="mailto:mattasreenidhi@gmail.com"><span>EMAIL</span><b>mattasreenidhi@gmail.com</b><i>↗</i></a>
+          <div><span>LOCATION</span><b>Bachupally, Hyderabad</b><i>⌖</i></div>
+          <div><span>ROLE</span><b>B.Tech CSE · Student</b><i>01</i></div>
+          <div class="contact-links">
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GITHUB ↗</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <span>SRINIDHI MATTA © 2026</span>
+        <span>BUILT WITH HTML · CSS · JS</span>
+        <span>BACK TO TOP ↑</span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

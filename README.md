@@ -1,20 +1,25 @@
-# ✨ Srinidhi Matta — Personal Portfolio
+# Srinidhi Matta Portfolio
 
-An interactive personal portfolio showcasing my journey as a
-Computer Science & Engineering student, featuring my skills,
-projects, experience, and interests through a modern animated UI/UX.
+A single-page portfolio inspired closely by the supplied reference video:
+- dark navy/black editorial layout
+- oversized serif typography
+- centered portrait treatment
+- particle/constellation background
+- glassy navigation
+- scrolling skills marquee
+- animated project cards
+- layered toolkit cards
+- timeline/experience section
+- contact section
+- responsive mobile layout
+- CSS and JavaScript transitions
 
+## Run
+Open `index.html` in a browser.
 
-## 🚀 Features
+The portfolio uses the uploaded portrait at `assets/profile.jpg`.
 
-- Interactive animated hero section
-- Orbit and particle animations
-- Smooth UI/UX interactions
-- Responsive design
-- Projects and skills showcase
-- Modern dark-themed interface
+## Personal details used
+The content is based on the supplied resume, including education, skills, projects, internship, certifications/hackathon participation, and contact details.
 
-## 🛠️ Built With
-
-HTML • CSS • JavaScript
-
+Final hero patch: restored the reference first-screen visual while keeping all later sections unchanged. Animated orbit layers remain behind the portrait; orbit particles, mouse parallax, portrait breathing, and subtle autonomous floating-card motion are enabled only on the hero.
