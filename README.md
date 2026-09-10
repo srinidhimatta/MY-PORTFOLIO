@@ -4,9 +4,6 @@ An interactive personal portfolio showcasing my journey as a
 Computer Science & Engineering student, featuring my skills,
 projects, experience, and interests through a modern animated UI/UX.
 
-## 🎬 Portfolio Demo
-
-![Portfolio Demo](assets/portfolio-demo.gif)
 
 ## 🚀 Features
 
